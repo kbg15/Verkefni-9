@@ -3,7 +3,7 @@ import { el, element, formatDate } from './utils';
 
 let map;
 
-// Býr til popup á korti út frá geojson með content
+
 export function createPopup(geojson) {
   // TODO
   const x = geojson.geometry.coordinates[1];
@@ -17,7 +17,7 @@ export function createPopup(geojson) {
   );
 }
 
-// Býr til Leaflet kort og setur miðju á (0, 0) í zoom level 2
+
 export function init(id) {
   // TODO
   map = L.map(id).setView([0.00, 0.00], 2);
